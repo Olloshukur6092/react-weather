@@ -7,8 +7,9 @@ import { ForecastCard } from "./components/ForecastCard";
 import { useWeatherStore } from "./store/weatherStore";
 import { WeatherData, ForecastData } from "./types/weather";
 
-const API_KEY = import.meta.env.API_KEY; // Replace with your OpenWeatherMap API key
-const BASE_URL = import.meta.env.BASE_URL;
+const API_KEY = import.meta.env.VITE_API_KEY // Replace with your OpenWeatherMap API key
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 
 const App: React.FC = () => {
   const { city, isDarkMode, toggleDarkMode } = useWeatherStore();
